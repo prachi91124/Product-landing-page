@@ -88,7 +88,7 @@
             text-align: center;
             margin-top: 30px;
         } */
-
+        body{}
         .team-container {
             display: flex;
             justify-content: center;
@@ -107,6 +107,7 @@
             border-radius: 10px;
             overflow: hidden;
             transition: all 0.3s ease-out;
+            margin-bottom: 100px;
         }
 
         .team-card:hover {
@@ -310,21 +311,42 @@
     <!--footer-->
     <footer class="footer">
         <div class="bottom-links">
-            <div class="links">
-                <span>More Info</span>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="links">
-                <span>Social Links</span>
-                <a href="#"><i class="fab fa-facebook">Facebook</i> </a>
-                <a href="#"><i class="fab fa-twitter"> Twitter</i></a>
-                <a href="#"><i class="fab fa-instagram"> Instagram</i></a>
-            </div>
+          <div class="links">
+            <span>More Info</span>
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="links">
+            <span>Social Links</span>
+            <a href="#"><i class="gg-facebook"></i>
+              Facebook
+            </a>
+            <a href="#"><i class="gg-twitter"> </i>Twitter</a>
+            <a href="#"><i class="gg-instagram"> </i>Instagram</a>
+          </div>
         </div>
-        <div class="reserved" style="text-align: center; color: white;">&copy; Akshit | All rights reserved</div>
-    </footer>
+        <div class="reserved" style="text-align: center; color: white;">&copy; ByteBuilders | All rights reserved</div>
+      </footer>
+      <script>
+        window.scroll({
+          top: 2500,
+          left: 0,
+          behavior: 'smooth'
+        });
+    
+        // Scroll certain amounts from current position 
+        window.scrollBy({
+          top: 100, // could be negative value
+          left: 0,
+          behavior: 'smooth'
+        });
+    
+        // Scroll to a certain element
+        document.querySelector('.hello').scrollIntoView({
+          behavior: 'smooth'
+        });
+      </script>
 </body>
 
 </html>

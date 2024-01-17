@@ -218,6 +218,7 @@ button:hover {
   align-items: center;
   background-color: black;
   padding: 40px 80px;
+  width: 100%;
 }
 
 .footer .copy {
@@ -286,9 +287,9 @@ h1{
   justify-self: center;
   position: relative;
 }
-a i{
+.container{
   text-decoration: none;
   color: black;
   overflow:hidden;
-
+  
 }
