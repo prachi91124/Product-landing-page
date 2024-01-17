@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- navigation bar-->
+  <header>
+    <img src="bulb.png">
+    <nav>
+      <ul>
+        <li><a href="#" title="Go To Home Page">Home</a></li>
+        <li><a href="about.html" title="Know About US">About Us</a></li>
+        <li><a href="tof.html" title="Terms And Conditions">Terms</a></li>
+        <li><a href="contact.html" title="Get In Touch With Us">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- video and text overlay-->
+  <div class="video-container">
+    <video autoplay loop muted>
+      <source src="Technology Background Loop Video - Non Copyright Video.mp4" type="video/mp4">
+    </video>
+    <div class="text-overlay" style="color: black; ">
+      <h1 style="font-family:Sacramento ; ">Welcome to <br><span style="font-family:Monoton; ">Byte Builders</span>
+      </h1>
+      <p class="txt">"Discover a world of possibilities with our diverse <br> range of high-quality products for all your needs."</p>
+    </div>
+  </div>
+  <hr>
+  <!--categories section-->
+  <h2>Our Categories</h2>
+  <div class="cardcontainer">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCiUfy7u7xGBeTyTQzs-mmyb2fFxD9HM_uvw&usqp=CAU"
+      alt="Avatar" style="width:100%" width="200" height="200">
+      <div class="container">
+        <h4><b>Mobiles</b></h4>
+      </div>
+      <div></div>
+      <a href="mobile.html"><button class="explorebutton">Explore</button></a>
+    </div>
+    <div class="card">
+      <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg" alt="laptop"
+      style="width:100%" width="200" height="200" title="See Wide Range Of Mobiles" >
+      <div class="container">
+        <h4><b>Laptops</b></h4>
+      </div>
+      <div></div>
+      <a href="laptop.html"><button class="explorebutton">Explore</button></a>
+    </div>
+    <div class="card">
+      <img src="https://imboldn.com/wp-content/uploads/2022/09/Apple-AirPods-Pro-2-main.jpg" alt="laptop"
+      style="width:100%" width="200" height="200">
+      <div class="container">
+        <h4><b>Accesories</b></h4>
+      </div>
+      <div></div>
+      <a href="accessories.html"><button class="explorebutton">Explore</button></a>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="footer">
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="gg-facebook"></i>
+          Facebook
+        </a>
+        <a href="#"><i class="gg-twitter"> </i>Twitter</a>
+        <a href="#"><i class="gg-instagram"> </i>Instagram</a>
+      </div>
+    </div>
+    <div class="reserved" style="text-align: center; color: white;">&copy; ByteBuilders | All rights reserved</div>
+  </footer>
+  <script>
+    window.scroll({
+      top: 2500,
+      left: 0,
+      behavior: 'smooth'
+    });
+
+    // Scroll certain amounts from current position 
+    window.scrollBy({
+      top: 100, // could be negative value
+      left: 0,
+      behavior: 'smooth'
+    });
+
+    // Scroll to a certain element
+    document.querySelector('.hello').scrollIntoView({
+      behavior: 'smooth'
+    });
+  </script>
+</body>
+
+</html>
