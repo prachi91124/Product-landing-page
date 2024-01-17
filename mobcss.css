@@ -3,7 +3,7 @@ html{
   }
 header img {
     height: 80px;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 body {
@@ -12,14 +12,21 @@ body {
     background-size: cover;
     font-family: sans-serif;
     margin-top: 80px;
-    padding: 30px;
+    /* padding: 30px; */
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     color: white;
 }
 
-header {
+.container h4{
+    margin-top: 30%;
+    position: relative;
+    padding: 15px;
+}
+/* header {
     background-color: black;
     position: fixed;
     top: 0;
@@ -47,13 +54,19 @@ header li a {
 
 header li a:hover {
     text-decoration: underline overline;
-}
+} */
 
 .search input[type=text] {
-    width: 300px;
-    height: 25px;
+    justify-content: center;
+    width: 350px;
+    height: 35px;
     border-radius: 25px;
     border: none;
+    align-items: center;
+    padding: 10px;
+    display:inline;
+    position: relative;
+    
 }
 
 .search {
@@ -66,15 +79,19 @@ header li a:hover {
     background-color: black;
     color: #f2f2f2;
     float: right;
-    padding: 5px 10px;
+    padding:  10px;
     margin-right: 16px;
     font-size: 12px;
     border: none;
     cursor: pointer;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
 }
 
 .buybutton {
-    display: inline-block;
+    display:block;
     padding: 10px 20px;
     background-color: black;
     color: white;
@@ -83,9 +100,19 @@ header li a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    height:50px;
+    width: 200px;
+
+    position:absolute;
+    margin-bottom: 10px;
+    margin-left: 50px;
+
+}
+ul{
+    line-height: 35px;
 }
 
-.footer {
+/* .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,7 +151,7 @@ header li a:hover {
     text-decoration: none;
     color: #a1a1a1;
     padding: 10px 20px;
-}
+} */
 
 
 /* css to images of categories */
@@ -147,6 +174,8 @@ table {
     width: 100%;
     border-spacing: 30px;
     border-radius: 10px 40px;
+    justify-content: center;
+    margin-left: 50px;
 }
 
 button {

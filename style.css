@@ -287,7 +287,7 @@ h1{
   justify-self: center;
   position: relative;
 }
-.container{
+.team-card .container{
   text-decoration: none;
   color: black;
   overflow:hidden;

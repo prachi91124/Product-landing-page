@@ -3,50 +3,67 @@
 
 <head>
     <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/508e2c6038.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
+            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+            background-repeat: no-repeat;
+            object-fit: fill;
+            height: 100%;
+            justify-content: center;
+            width: 100%;
+
         }
 
+
         .container {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff;
+            position: relative;
+            display: inline;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            /*width: 300px;*/
+            /*padding: 50px;*/
+
         }
 
         .container form {
-            max-width: 500px;
-            padding: 20px;
-            width: 100%;
-        }
 
-        .container h1 {
-            text-align: center;
+            padding: 50px;
+            border-radius: 3%;
+            width: 60vh;
+            justify-content: center;
+            align-items: center;
+            display: inline-block;
+            position: static;
         }
 
         .form-group {
             margin-bottom: 20px;
+
         }
 
         .form-group label {
             display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
+            color: #cfd9df;
+            text-align: left;
         }
 
         .form-group input[type="text"],
         .form-group textarea {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
+            padding: 2vh;
+            border: 0;
+            border-bottom: 2px solid #ccc;
             border-radius: 4px;
+            background-color: transparent;
+            box-shadow: 5%;
+            color: #e0dfdf;
         }
 
         .form-group textarea {
@@ -54,18 +71,22 @@
         }
 
         .form-group button {
-            padding: 10px 20px;
+            padding: 20px;
             background-color: #4caf50;
             color: #fff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            align-items: center;
+            height: max-content;
+            width: 25vh;
         }
 
         .form-group button:hover {
             background-color: #45a049;
         }
 
+        /*
         header {
             background-color: black;
             position: fixed !important;
@@ -140,11 +161,12 @@
             text-decoration: none;
             color: #a1a1a1;
             padding: 10px 20px;
+        }*/
+        input {
+            transition: all 0.3s ease-out;
         }
-        input{
-            transition: all 0.3s ease-out;    
-        }
-        input:hover{
+
+        input:hover {
             transform: scale(1.1);
         }
     </style>
@@ -153,43 +175,46 @@
 <body>
     <!--navigation bar-->
     <header>
-        <img
-            src="https://play-lh.googleusercontent.com/_utOkNnI6bsi7zw1DvLq_7Q9pE0iOcY-7DAjiOyMRzm-9P-tr7TwpiiQ7z2ieS9r8f8L">
+        <img src="bulb.png">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="tof.html">Terms of use</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="tof.html">Terms</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <br>
-    <br>
 
 
     <div class="container">
-        <form>
-            <h1>Contact Us</h1>
+        <h1 style="text-align: center; font-size:60px;
+            margin:50px;margin-bottom:0; ">Contact Us</h1>
+        <form
+            style="text-align: center; background-color: rgb(9, 2, 36); margin-left:60vh;margin-right:20vh;margin-top:1vh;margin-bottom:10vh;">
+
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required title="Enter Your Name" placeholder="John Doe">
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
+                <input type="text" id="email" name="email" required title="Enter Your Email" placeholder="abc@mail.com">
             </div>
             <div class="form-group">
                 <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="phone" required>
+                <input type="text" id="phone" name="phone" required title="Enter Your Phone Number"
+                    placeholder="9XX XXX XXXX">
             </div>
             <div class="form-group">
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
+                <input type="text" id="subject" name="subject" required title="Enter Your Subject"
+                    placeholder=" Subject">
             </div>
             <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" required title="Type Your Message"
+                    placeholder="Type your message here"></textarea>
             </div>
             <div class="form-group">
                 <button type="submit">Send Message</button>
@@ -200,21 +225,21 @@
     <!--footer-->
     <footer class="footer">
         <div class="bottom-links">
-            <div class="links">
-                <span>More Info</span>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="links">
-                <span>Social Links</span>
-                <a href="#"><i class="fab fa-facebook">Facebook</i> </a>
-                <a href="#"><i class="fab fa-twitter"> Twitter</i></a>
-                <a href="#"><i class="fab fa-instagram"> Instagram</i></a>
-            </div>
+          <div class="links">
+            <span>More Info</span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="links">
+            <span style="color: white;">Social Links</span>
+            <a><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+            <a><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+            <a><i class="fa-brands fa-instagram"></i>Instagram</a>
+          </div>
         </div>
-        <div class="reserved" style="text-align: center; color: white;">&copy; Akshit | All rights reserved</div>
-    </footer>
+        <div class="reserved" style="text-align: center; color: white;">&copy; ByteBuilders | All rights reserved</div>
+      </footer>
 </body>
 
 </html>
